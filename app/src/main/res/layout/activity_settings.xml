@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp">
+
+            <Switch
+                android:id="@+id/notifications"
+                fontPath="fonts/Poppins-Regular.otf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Update Location"
+                android:textColor="@color/medium"
+                android:textSize="@dimen/_13sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BREAK TIME :(FROM)"
+                    android:textColor="@color/medium"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BREAK TIME :(TO)"
+                android:textColor="@color/medium"
+                android:textSize="@dimen/_13sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

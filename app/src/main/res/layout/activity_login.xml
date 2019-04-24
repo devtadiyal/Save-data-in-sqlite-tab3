@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kk.dialer.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector2"
+        android:layout_marginLeft= "@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:hint="Username" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:passwordToggleEnabled="true"
+
+            android:layout_height="wrap_content"
+       >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="40"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:text="Log In"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/action_bar1"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:layout_gravity="center"
+            android:textColor="@color/action_bar1"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have Account? REGISTER"
+                       android:layout_gravity="center"
+            android:textColor="@color/action_bar1"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+    </LinearLayout>
+
+
+</ScrollView>
