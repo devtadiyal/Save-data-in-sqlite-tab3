@@ -31,4 +31,7 @@ dependencies {
     implementation 'org.jetbrains:annotations-java5:15.0'
     implementation 'com.android.support:support-annotations:28.0.0'
 
+    implementation 'io.nlopez.smartlocation:library:3.2.9'
+
+
 }

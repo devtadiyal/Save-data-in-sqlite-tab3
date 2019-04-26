@@ -12,7 +12,10 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.kk.dialer.endlessservice.ServiceNoDelay;
 import com.kk.dialer.tabfrag.PagerAdapter;
+
+import io.nlopez.smartlocation.SmartLocation;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,10 +26,13 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        startService(new Intent(this, ServiceNoDelay.class));
+
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("RECORDINGS"));
         tabLayout.addTab(tabLayout.newTab().setText("CONTACTS"));
-        tabLayout.addTab(tabLayout.newTab().setText("NOTIFICATIONS"));
+        tabLayout.addTab(tabLayout.newTab().setText("SQLITE WORK"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -83,4 +90,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
